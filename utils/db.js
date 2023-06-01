@@ -5,8 +5,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/pharma", {
   useCreateIndex: true,
 });
 
-// Membuat Scema
-const Contact = mongoose.model("Contact", {
+// Membuat Schema
+const Karyawan = mongoose.model("karyawan", {
   nama: {
     type: String,
     required: true,
@@ -21,10 +21,10 @@ const Contact = mongoose.model("Contact", {
 });
 
 // Menambahkan 1 Data
-const contact1 = new Contact({
+const contact1 = new Karyawan({
   nama: "Sari Wahyuningsih",
   alamat: "Karangtengah, Tangerang",
   no_HP: "085241554874",
 });
 
-contact1.save().then((contact) => console.log(contact));
+contact1.save().then((karyawan) => console.log(karyawan));
