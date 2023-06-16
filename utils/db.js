@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 // }
 
-mongoose.connect("mongodb://127.0.0.1:27017/pharma", {
+mongoose.connect("mongodb+srv://Pharmadent:Pharma123@atlascluster.v4foaad.mongodb.net/pharmadent", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
